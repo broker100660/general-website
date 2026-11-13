@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My application | KJR Ventures SMC Co. Ltd</title><meta name="description" content="Track your loan application.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css"></head>
+<body data-page="track">
+<header class="top"><div class="wrap"><a class="brand" href="index.html">KJR Ventures<small>SMC Co. Ltd</small></a><nav aria-label="Main"><a href="index.html">Home</a><a href="smartphone-loans.html">Smartphones</a><a href="boda-boda-loans.html">Boda boda</a><a href="car-loans.html">Cars</a><a href="general-loans.html">General loans</a><a href="my-application.html" aria-current="page">My application</a></nav></div></header>
+<main><section class="hero sm"><div class="wrap"><div class="crumb"><a href="index.html">Home</a> / My application</div><h1>My application</h1><p>Check your status, download your loan pack, pay your deposit or upload signed documents.</p></div></section>
+<section><div class="wrap"><form class="box" id="trkForm" novalidate>
+<label for="tRef">Application reference</label><input id="tRef" placeholder="KJR-1001" required>
+<label for="tContact">Phone or email you applied with</label><input id="tContact" required>
+<p><button type="submit">Check my application</button></p><p class="msg" id="trkMsg" role="alert"></p>
+<div id="trkOut" hidden><div class="state" id="trkState"></div>
+<div class="acts"><button type="button" id="bPack" hidden>Download loan pack</button><button type="button" class="gold" id="bDep" hidden>Pay deposit</button></div>
+<div id="packLinks"></div>
+<div id="upWrap" hidden><label for="upFile">Upload your signed documents (max 8 MB)</label><input id="upFile" type="file"><p><button type="button" id="bUp">Upload signed documents</button></p></div></div></form></div></section></main>
+<footer><div class="wrap"><strong>KJR Ventures SMC Co. Ltd</strong>, Kampala, Uganda<br>
+<!-- Add: registration number, licence number, physical address -->
+<a href="tel:+256791741509">+256 791 741509</a> · <a href="mailto:application@kjrventures.com">application@kjrventures.com</a> · <a href="https://wa.me/256791741509">WhatsApp</a><br>© 2026 KJR Ventures SMC Co. Ltd. All rights reserved.</div></footer>
+<script src="assets/site.js"></script></body></html>

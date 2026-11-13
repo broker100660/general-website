@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apply for a loan | KJR Ventures SMC Co. Ltd</title><meta name="description" content="Apply online for a loan from KJR Ventures SMC Co. Ltd.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css"></head>
+<body data-page="apply">
+<header class="top"><div class="wrap"><a class="brand" href="index.html">KJR Ventures<small>SMC Co. Ltd</small></a><nav aria-label="Main"><a href="index.html">Home</a><a href="smartphone-loans.html">Smartphones</a><a href="boda-boda-loans.html">Boda boda</a><a href="car-loans.html">Cars</a><a href="general-loans.html">General loans</a><a href="my-application.html">My application</a></nav></div></header>
+<main><section class="hero sm"><div class="wrap"><div class="crumb"><a href="index.html">Home</a> / Apply</div><h1>Apply for a loan</h1><p>It takes about five minutes. Have your National ID ready.</p></div></section>
+<section><div class="wrap"><form class="box" id="appForm" novalidate><div class="grid">
+<div class="full"><label for="fProduct">Loan product</label><select id="fProduct" name="product_id" required></select></div>
+<div class="full" id="fPriceWrap" hidden><label for="fPrice">Asset or project price (UGX)</label><input id="fPrice" name="asset_price" type="number" min="0" inputmode="numeric"></div>
+<div class="full"><div class="sum"><span>Application fee, paid now<b id="sFee">UGX 0</b></span><span>Deposit, paid after approval<b id="sDep">UGX 0</b></span></div></div>
+<div><label for="fName">Full name</label><input id="fName" name="full_name" autocomplete="name" required></div>
+<div><label for="fPhone">Phone (MTN or Airtel)</label><input id="fPhone" name="phone" type="tel" autocomplete="tel" placeholder="+256…" required></div>
+<div><label for="fEmail">Email</label><input id="fEmail" name="email" type="email" autocomplete="email" required></div>
+<div><label for="fNin">National ID number</label><input id="fNin" name="nin"></div>
+<div class="full"><label for="fId">Upload your National ID (photo or PDF, max 5 MB)</label><input id="fId" name="id_doc" type="file" accept="image/*,application/pdf" required></div>
+<div class="full"><label for="fIncome">Your work and income</label><textarea id="fIncome" name="income" rows="3" placeholder="What you do, and roughly what you earn each month"></textarea></div>
+<div><label for="gName">Guarantor or referee name</label><input id="gName" name="g_name"></div>
+<div><label for="gPhone">Guarantor phone</label><input id="gPhone" name="g_phone" type="tel"></div>
+<div class="full"><label for="gRel">How do you know them?</label><input id="gRel" name="g_rel"></div></div>
+<p class="fine">By continuing you agree that we may store your details and documents to assess your application.</p>
+<p><button class="gold" id="appGo" type="submit">Continue to pay application fee</button></p><p class="msg" id="appMsg" role="alert"></p></form></div></section></main>
+<footer><div class="wrap"><strong>KJR Ventures SMC Co. Ltd</strong>, Kampala, Uganda<br>
+<!-- Add: registration number, licence number, physical address -->
+<a href="tel:+256791741509">+256 791 741509</a> · <a href="mailto:application@kjrventures.com">application@kjrventures.com</a> · <a href="https://wa.me/256791741509">WhatsApp</a><br>© 2026 KJR Ventures SMC Co. Ltd. All rights reserved.</div></footer>
+<script src="assets/site.js"></script></body></html>
