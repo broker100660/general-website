@@ -18,6 +18,16 @@
 <div><label for="fNin">National ID number</label><input id="fNin" name="nin"></div>
 <div class="full"><label for="fId">Upload your National ID (photo or PDF, max 5 MB)</label><input id="fId" name="id_doc" type="file" accept="image/*,application/pdf" required></div>
 <div class="full"><label for="fIncome">Your work and income</label><textarea id="fIncome" name="income" rows="3" placeholder="What you do, and roughly what you earn each month"></textarea></div>
+<div class="full" data-for="General loans" hidden><label>How much do you need? (UGX)<input name="requested_amount" type="number" min="1" inputmode="numeric" disabled></label></div>
+<div data-for="General loans" hidden><label>What is the loan for?<input name="purpose" type="text" disabled></label></div>
+<div data-for="General loans" hidden><label>Repay over how many months?<input name="x_repay_months" type="number" min="1" max="60" disabled></label></div>
+<div data-for="Boda boda financing" hidden><label>Riding permit number<input name="x_permit_no" type="text" disabled></label></div>
+<div data-for="Boda boda financing" hidden><label>Your stage (name and area)<input name="x_stage" type="text" disabled></label></div>
+<div data-for="Boda boda financing" hidden><label>Years of riding experience<input name="x_years_riding" type="number" min="0" disabled></label></div>
+<div data-for="Car financing" hidden><label>Driving permit number<input name="x_driving_permit" type="text" disabled></label></div>
+<div data-for="Car financing" hidden><label>Monthly income (UGX)<input name="x_monthly_income" type="number" min="0" disabled></label></div>
+<div class="full" data-for="Car financing" hidden><label>Employer or business name<input name="x_employer" type="text" disabled></label></div>
+<div class="full" data-for="Smartphone loans" hidden><label>Preferred colour or storage (optional)<input name="x_preference" type="text" disabled></label></div>
 <div><label for="gName">Guarantor or referee name</label><input id="gName" name="g_name"></div>
 <div><label for="gPhone">Guarantor phone</label><input id="gPhone" name="g_phone" type="tel"></div>
 <div class="full"><label for="gRel">How do you know them?</label><input id="gRel" name="g_rel"></div></div>
