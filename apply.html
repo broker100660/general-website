@@ -34,4 +34,11 @@
 <footer><div class="wrap"><strong>KJR Ventures SMC Co. Ltd</strong>, Kampala, Uganda<br>
 <!-- Add: registration number, licence number, physical address -->
 <a href="tel:+256791741509">+256 791 741509</a> · <a href="mailto:application@kjrventures.com">application@kjrventures.com</a> · <a href="https://wa.me/256791741509">WhatsApp</a><br>© 2026 KJR Ventures SMC Co. Ltd. All rights reserved.</div></footer>
+<script>
+/* Shows the extra fields for the chosen loan type. Works on its own, even with an older site.js. */
+(function(){var s=document.getElementById('fProduct');
+function t(){var o=s.options[s.selectedIndex];if(!o)return;var g=o.parentNode.label||'';
+document.querySelectorAll('[data-for]').forEach(function(e){var on=e.getAttribute('data-for')===g;e.hidden=!on;e.querySelectorAll('input').forEach(function(i){i.disabled=!on})})}
+s.addEventListener('change',t);new MutationObserver(t).observe(s,{childList:true,subtree:true});t()})();
+</script>
 <script src="assets/site.js"></script></body></html>
