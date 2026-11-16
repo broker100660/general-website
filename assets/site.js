@@ -27,6 +27,7 @@ if(page==='apply'){
   function sync(){
     const p=by(sel.value);if(!p)return;
     $('#fPriceWrap').hidden=!needsPrice(p);
+    document.querySelectorAll('[data-for]').forEach(el=>{const on=el.dataset.for===p.category;el.hidden=!on;el.querySelectorAll('input').forEach(i=>i.disabled=!on)});
     const d=depAmt(p,p.asset_price??(+$('#fPrice').value||null));
     $('#sFee').textContent=fmt(p.application_fee);$('#sDep').textContent=d==null?'Enter the price':fmt(d);
   }
